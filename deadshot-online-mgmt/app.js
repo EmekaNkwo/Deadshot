@@ -19,7 +19,7 @@ app.use((req, res, next) => {
 app.use(express.static(path.join(__dirname, 'public')));
 app.set("views", path.join(__dirname, 'public/views'));
 
-app.engine('handlebars', handlebars({defaultLayout: 'layout'}));
+app.engine('handlebars', handlebars());
 app.set('view engine', 'handlebars');
 
 //Mail Sender Init
