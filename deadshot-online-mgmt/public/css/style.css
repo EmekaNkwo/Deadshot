@@ -2,7 +2,7 @@
 
 /*-------NAVIGATION BAR--------- */
 #nav-bar{
-    position: static;
+    position: sticky;
     top: 0;
     z-index: 10;
 }
@@ -10,7 +10,7 @@
 .navbar-brand img{
 height: 40px;
 padding-left: 30px;
-margin-top: 20px;
+margin-top: 15px;
 }
 
 .navbar-nav li{
@@ -30,10 +30,7 @@ padding: 0 10px;
 }
 
 .navbar{
-    /* background:rgb(65, 64, 64); */
-    background:rgb(37, 37, 37);
-    /* background: #007bff; */
-
+    background:#111111;
 }
 
 .navbar-toggler{
@@ -79,13 +76,13 @@ padding: 0 10px;
     text-align: center;
     padding-top: 50px;
     padding-bottom: 50px;
-    color: #555;
+    color:#111111;
 }
 
 #about{
     padding-top: 50px;
     padding-bottom: 50px;
-    color: rgb(51, 51, 51);
+    color: #111111;
     background-color: rgb(253, 253, 253);
     }
     #about h2{
@@ -96,7 +93,7 @@ padding: 0 10px;
     }
     #about h2::after{
         content: '';
-        background: rgb(51, 51, 51);
+        background: #111111;
         display: block;
         height: 3px;
         width: 170px;
@@ -110,12 +107,16 @@ padding: 0 10px;
         padding: 10px 20px;
         text-decoration: none;
         transition: 0.5s ease;
-        font-weight: bold;
+        font-weight: 600;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        text-transform: uppercase;
     }
     
     .about-button:hover{
     color: white;
-    background-color:rgb(36, 35, 35) ;
+    background-color:#111111 ;
     }
     
     .about-content{
@@ -124,16 +125,17 @@ padding: 0 10px;
         margin-right: 30px;
         text-align: justify;
         padding-top: 20px;
-        line-height: 35px;
+        line-height: 30px;
     }
+
 
 /*-------------SERVICES----------*/
 
 #services{
-    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(../images/slide1.jpg);
+    background-image: url(../images/deadshot2.png);
     background-size: cover;
     background-position: center;
-    color: #efefef !important;
+    color: #fafafa !important;
     background-attachment: fixed;
     padding-top: 50px;
     padding-bottom: 50px;
@@ -141,13 +143,13 @@ padding: 0 10px;
     
     #services h1{
         text-align: center;
-        color: #efefef !important;
+        color: #fafafa !important;
         padding-bottom: 10px;
     }
     
     #services h1::after{
        content: '';
-       background: #efefef;
+       background: #fafafa;
        display: block;
        height: 3px;
        width: 170px;
@@ -168,10 +170,11 @@ padding: 0 10px;
         border-radius: 50%;
     }
 
-    #services p {
-        font-size: 14px;
+    #services a {
+        font-size: 16px;
         margin-top: 20px;
-        color: ccc;
+        color: #fafafa;
+        font-weight: 500;
     }
 
     .services .col-md-4:hover{
@@ -186,12 +189,12 @@ padding: 0 10px;
         background: #efefef;
         padding-top: 50px;
         padding-bottom: 50px;
-        color: #777;
+        color: rgb(216, 216, 216);
     }
 
     #contact h1{
         text-align: center;
-        color: rgb(51, 51, 51)!important;
+        color: #111111!important;
         padding-bottom: 10px;
     }
     
@@ -208,35 +211,51 @@ padding: 0 10px;
     .contact-form{
         margin-top: 10px;
         padding:15px;
+    left: 43%;
 
     }
     .form-control{
       border-radius: 0 !important;
       border: 1px !important;  
       margin-top: 15px;
+    
+    }
+
+    .contact-form textarea{
+        max-height: 142px;
+    min-height: 172px;
     }
     
 
     ::placeholder{
         color: #999 !important;
+        font-weight: 500;
     }
 
     .contact-info{
         margin-top: 24px;
+        color:  #999 !important;
     }
+
     .follow{
 background: #ffffff;
 padding: 10px;
 margin-top: 20px;
 margin: 15px;
+font-weight: 500;
 
     }
+
   .contact-info .fa{
       margin:10px;
       color: #007bff;
-      font-weight: bold;
+      font-weight: 500 !important;
 
   }  
+
+  .contact-info b{
+      font-weight: 500 !important;
+  }
 
 
   /*-----FOOTER-----*/
